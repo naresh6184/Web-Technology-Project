@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>English</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(135deg, #ffa500, #32cd32);
+            color: #fff;
+        }
+
+        header {
+            background: linear-gradient(135deg, #ffa500, #32cd32);
+            color: #fff;
+            padding: 1em;
+            text-align: center;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #6fcf97; 
+            padding: 10px;
+          }
+      
+          nav a {
+            color: #fff;
+            text-decoration: none;
+            padding: 10px 20px;
+            margin: 0 10px;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+          }
+      
+          nav a:hover {
+            background-color: #45b864; 
+          }
+        main {
+            padding: 2em;
+        }
+
+        .subject-options {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+
+        .section {
+            background-color: #6fcf97;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 1em;
+            margin: 1em;
+            text-align: center;
+            width: 300px;
+        }
+
+        .section h2 {
+            margin-bottom: 10px;
+        }
+
+        .option {
+            background-color: #f0e68c; 
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 1em;
+            margin: 1em;
+            text-align: center;
+            width: 200px;
+        }
+
+        .option:nth-child(even) {
+            background-color: #98fb98; 
+        }
+
+        footer {
+            background-color: #34495e;
+            color: #fff;
+            padding: 1em;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>English</h1>
+    </header>
+
+    <nav>
+        <a href="dashboard.html" style="background-color: #3ddb67;">Home</a>
+        <a href="math.html" style="background-color: #f4a45e;">Math</a>
+        <a href="science.html" style="background-color: #b8ad45;">Science</a>
+        <a href="english.html" style="background-color: #97e544;">English</a>
+    </nav>
+
+    <main>
+        <div class="subject-options">
+            <div class="section">
+                <h2>Grammar</h2>
+                <div class="option">
+                    <h3>Syllabus</h3>
+                    <p>Explore the grammar syllabus.</p>
+                    <a href="english.grammar.html">Explore</a>
+                </div>
+            </div>
+
+            <div class="section">
+                <h2>Books</h2>
+                <div class="option">
+                    <h3><a href="english.book1.html">Book 1</a></h3>
+                </div>
+                <div class="option">
+                    <h3><a href="english.book2.html">Book 2</a></h3>
+                </div>
+                <div class="option">
+                    <h3><a href="english.book3.html">Book 3</a></h3>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 English Subject Page</p>
+    </footer>
+</body>
+</html>

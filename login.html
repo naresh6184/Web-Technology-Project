@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Login Page</title>
+    <style>
+        body {
+            background: linear-gradient(135deg, #FFB951, #80CC85);
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            color: #555; 
+        }
+
+        .container {
+            background-color: rgba(255, 255, 255, 0.5); 
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            max-width: 400px;
+            width: 100%;
+            margin: 0 10px;
+        }
+
+        .logo {
+            max-width: 100px;
+            margin-bottom: 20px;
+        }
+
+        h1 {
+            color: #333; 
+            margin-bottom: 20px;
+        }
+
+        .user-selection {
+            margin-top: 20px;
+        }
+
+        h3 {
+            display: inline-block;
+            margin-right: 10px;
+            color: #333;
+        }
+
+        input[type="radio"] {
+            display: none;
+        }
+
+        label {
+            cursor: pointer;
+            padding: 10px;
+            border: 2px solid #333;
+            color: #333;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        input[type="radio"]:checked+label {
+            background-color: #333;
+            color: #fff;
+        }
+
+        form {
+            margin-top: 20px;
+            text-align: left;
+        }
+
+        label.inline-block {
+            display: block;
+            margin-bottom: 5px;
+            color: #333;
+        }
+
+        input[type="text"],
+        input[type="password"],
+        input[type="submit"] {
+            width: 100%;
+            padding: 15px;
+            margin: 10px 0;
+            box-sizing: border-box;
+            border: none;
+            border-bottom: 2px solid #FFB951;
+            background-color: rgba(255, 255, 255, 0.8);
+            border-radius: 5px;
+            color: #333;
+            outline: none;
+            transition: all 0.3s;
+        }
+
+        input[type="text"]:focus,
+        input[type="password"]:focus {
+            border-bottom: 2px solid #80CC85;
+            background-color: rgba(255, 255, 255, 1);
+        }
+
+        input[type="submit"] {
+            background: linear-gradient(135deg, #FFB951, #80CC85);
+            color: #fff;
+            border: none;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+
+        input[type="submit"]:hover {
+            background: linear-gradient(135deg, #FFA200, #70B466);
+        }
+
+        input[type="submit"]:active {
+            background: linear-gradient(135deg, #FF8C00, #5A955E);
+        }
+
+        input[type="checkbox"] {
+            margin-right: 5px;
+        }
+
+        a {
+            color: #4CAF50;
+            text-decoration: none;
+            display: block;
+            margin-top: 10px;
+            transition: color 0.3s;
+        }
+
+        a:hover {
+            color: #333;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <img src="logo.jpeg" alt="logo" class="logo">
+        <h1>Welcome Back!</h1>
+        <div class="user-selection">
+            <h3>Please choose your role:</h3>
+            <input type="radio" id="admin_role" name="user_role" value="admin" required>
+            <label for="admin_role">Admin</label>
+            <input type="radio" id="student_role" name="user_role" value="student" required>
+            <label for="student_role">Student</label>
+        </div>
+        <form action="(Link to where the information stores)" method="post">
+            <input type="text" id="username" name="username" placeholder="Username or Email" required>
+            <input type="password" id="password" name="password" placeholder="Password" required>
+            <input type="submit" value="Login">
+            <input type="checkbox" id="remember_me" name="remember_me">
+            <label for="remember_me">Remember me</label>
+        </form>
+        <a href="(link for getting password)">Forgot password?</a>
+    </div>
+</body>
+
+</html>
